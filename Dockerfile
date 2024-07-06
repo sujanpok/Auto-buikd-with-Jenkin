@@ -5,10 +5,10 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the project's JAR file into the container at /app
-COPY target/demo-0.0.1-SNAPSHOT.jar /app/demo.jar
+COPY target/app.jar /app/app.jar
 
-# Make port 8080 available to the world outside this container
-EXPOSE 8080
+# Make port 9090 available to the world outside this container
+EXPOSE 9090
 
 # Run the JAR file
-ENTRYPOINT ["java", "-jar", "demo.jar"]
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
