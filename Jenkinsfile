@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        maven 'maven_3_5_0' // Ensure this matches the configured Maven installation
+        maven 'maven_3_6_3' // Ensure this matches the configured Maven installation
     }
     stages {
         stage('Build Maven') {
