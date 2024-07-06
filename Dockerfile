@@ -1,5 +1,5 @@
-# Use an official OpenJDK runtime as a parent image
-FROM openjdk:11-jre-slim
+# Use an OpenJDK runtime suitable for ARM architecture
+FROM arm32v7/openjdk:11-jre-slim
 
 # Set the working directory
 WORKDIR /app
