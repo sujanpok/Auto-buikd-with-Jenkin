@@ -9,7 +9,7 @@ public class DemoController {
 	//tests
     @GetMapping("/hello")
     public String hello(Model model) {
-        model.addAttribute("message", "Hello, World! , i Am  auto deploying with jenkin");
+        model.addAttribute("message", "Hello, World! , i Am  auto deploying with jenkin ,commit test");
         return "hello";
     }
 }
